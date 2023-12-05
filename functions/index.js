@@ -35,7 +35,7 @@
  */
 
 //const {onRequest} = require("firebase-functions/v2/https");
-//const logger = require("firebase-functions/logger");
+const logger = require("firebase-functions/logger");
 
 // The Cloud Functions for Firebase SDK to create Cloud Functions and triggers.
 const {logger} = require("firebase-functions");
