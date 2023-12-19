@@ -54,7 +54,7 @@ initializeApp();
  exports.helloWorld = onRequest((request, response) => {
    logger.info("Hello logs!", { structuredData: true });
    //console.log("Current directory:", __dirname);
-   response.send("Gol de Saprissa , Alexa! que Medford me mande un sinpe de $50 ..");
+   response.send("Gol de Saprissa , Alexa! que Medford me mande un sinpe de $500 ..");
  });
 
  // Take the text parameter passed to this HTTP endpoint and insert it into
