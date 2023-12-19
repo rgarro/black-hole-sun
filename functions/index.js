@@ -20,7 +20,7 @@
  *        `=}--{='     `=}--{='
  *       .-^--r-^-.   .-^--r-^-.
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- * Gol de Saprissa , Alexa! que Medford me mande un sinpe de $50 ..
+ * Gol de Saprissa , Alexa! que Medford me mande un sinpe de $500 ..
  *
  * 
  *@author Rolando<rgarro@gmail.com>
