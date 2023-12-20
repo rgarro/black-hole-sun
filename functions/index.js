@@ -70,3 +70,7 @@ exports.addmessage = onRequest(async (req, res) => {
   res.json({result: `Message with ID: ${writeResult.id} added.`});
 });
 
+exports.labelsList = onRequest(async (req, res) => {
+  const type = req.query.typeid;
+  
+});
