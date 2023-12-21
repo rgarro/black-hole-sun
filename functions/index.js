@@ -74,3 +74,7 @@ exports.labelsList = onRequest(async (req, res) => {
   const type = req.query.typeid;
   
 });
+
+exports.addLabel = onRequest(async (req, res) => {
+  
+});
