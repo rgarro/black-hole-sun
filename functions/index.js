@@ -78,3 +78,7 @@ exports.labelsList = onRequest(async (req, res) => {
 exports.addLabel = onRequest(async (req, res) => {
   
 });
+
+exports.addKitesurfSess = onRequest(async (req, res) => {
+  
+});
