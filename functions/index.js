@@ -86,3 +86,7 @@ exports.addKitesurfSess = onRequest(async (req, res) => {
 exports.getActiveKitesurfSess = onRequest(async (req, res) => {
   
 });
+
+exports.addSessPoint = onRequest(async (req, res) => {
+  
+});
