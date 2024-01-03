@@ -94,3 +94,7 @@ exports.addSessPoint = onRequest(async (req, res) => {
 exports.detActivateKitesurfSess = onRequest(async (req, res) => {
   
 });
+
+exports.uploadKitesurfSessPic = onRequest(async (req, res) => {
+  
+});
