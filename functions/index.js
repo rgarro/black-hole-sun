@@ -51,7 +51,7 @@ initializeApp();
 // Create and deploy your first functions
 // https://firebase.google.com/docs/functions/get-started
 
- exports.helloWorld = onRequest((request, response) => {
+ exports.helloWorld = onRequest({ cors: true },(request, response) => {
    logger.info("Hello logs!", { structuredData: true });
    //console.log("Current directory:", __dirname);
    response.send("Gol de Saprissa , Alexa! que Medford me mande un sinpe de $500 ..");
@@ -59,7 +59,7 @@ initializeApp();
 
  // Take the text parameter passed to this HTTP endpoint and insert it into
 // Firestore under the path /messages/:documentId/original
-exports.addmessage = onRequest(async (req, res) => {
+exports.addmessage = onRequest({ cors: true },async (req, res) => {
   // Grab the text parameter.
   const original = req.query.text;
   // Push the new message into Firestore using the Firebase Admin SDK.
@@ -69,7 +69,7 @@ exports.addmessage = onRequest(async (req, res) => {
   // Send back a message that we've successfully written the message
   res.json({result: `Message with ID: ${writeResult.id} added.`});
 });
-
+/*
 exports.labelsList = onRequest(async (req, res) => {
   const type = req.query.typeid;
   
@@ -98,3 +98,4 @@ exports.detActivateKitesurfSess = onRequest(async (req, res) => {
 exports.uploadKitesurfSessPic = onRequest(async (req, res) => {
   
 });
+*/
