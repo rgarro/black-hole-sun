@@ -69,6 +69,19 @@ exports.addmessage = onRequest({ cors: true },async (req, res) => {
   // Send back a message that we've successfully written the message
   res.json({result: `Message with ID: ${writeResult.id} added.`});
 });
+
+exports.findRides = onRequest({ cors: true },(request, response) => {
+  let query = firestore.collection('Rides');
+  var rides = new Array();
+  query.get().then(querySnapshot => {
+  querySnapshot.forEach(documentSnapshot => {
+          console.log(documentSnapshot);
+          rides.push(documentSnapshot)
+          });
+  });
+  //console.log("Gol de saprisa:"); 
+  response.send(rides);
+ });
 /*
 exports.labelsList = onRequest(async (req, res) => {
   const type = req.query.typeid;
